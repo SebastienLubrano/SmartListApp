@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, Dimensions } from 'react-native';
 import Colors from '../constants/Colors';
 import BackButton from '../components/BackButton';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
+import Card from '../components/Card';
 
 
 export default class LogInScreen extends Component {
@@ -23,6 +24,7 @@ export default class LogInScreen extends Component {
                     buttonStyle={styles.buttonStyle}
                     onPress={this.backButtonPressHandler}
                 />
+                <Card style={styles.cardStyle} />
             </View>
         )
     }
@@ -42,6 +44,11 @@ const styles = StyleSheet.create({
     },
     buttonStyle: {
         
+    },
+    cardStyle: {
+        aspectRatio: 0.75,
+        minWidth: Dimensions.get('window').width * 0.8,
+        maxWidth: 400
     },
 
 });
