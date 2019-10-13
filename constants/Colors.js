@@ -4,5 +4,6 @@ export default {
     offWhite: '#F1EFEE',
     offPink: '#FF7E67',
     white: 'white',
-    textGrey: '#6E6E6E'
+    textGrey: '#6E6E6E',
+    textDarkGrey: '#444444'
 }
